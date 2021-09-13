@@ -15,6 +15,7 @@ def tournamentWinner(competitions, results):
 	print(win)	
 	print(max(zip(win.values(),win.keys()))[1])
     # return max(zip(win.values(),win.keys()))[1]
+	return max(winner_team)
 
 
 competitions = [
