@@ -11,19 +11,21 @@ def tournamentWinner(competitions, results):
 			winner = competitions[i][0]
 			winner_team.append(winner)
 
-	win = Counter(winner_team)
-	print(win)	
-	print(max(zip(win.values(),win.keys()))[1])
-    # return max(zip(win.values(),win.keys()))[1]
-	return max(winner_team)
+	win = Counter(winner_team)	
+	return max(zip(win.values(),win.keys()))[1]
 
+# competitions = [
+#   ["HTML", "C#"],
+#   ["C#", "Python"],
+#   ["Python", "HTML"]
+# ]
 
+# results = [0,0,1]
 competitions = [
-  ["HTML", "C#"],
-  ["C#", "Python"],
-  ["Python", "HTML"]
+    ["HTML", "Java"],
+    ["Java", "Python"],
+    ["Python", "HTML"]
 ]
-
-results = [0,0,1]
+results= [0, 1, 1]
 
 print(tournamentWinner(competitions,results))
