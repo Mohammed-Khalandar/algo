@@ -11,12 +11,14 @@ def pairSum(arr, s):
     
         
 
-arr = []
+# arr = []
 n ,target = input().split()
-for _ in range(int(n)):
-    arr.append(int(input()))
-    
+# for _ in range(int(n)):
+#     arr.append(int(input()))
+arr = list(map(int,input().split()))
 
+    
+print(n,target,arr)
 print(pairSum(arr,int(target)))
 
 
